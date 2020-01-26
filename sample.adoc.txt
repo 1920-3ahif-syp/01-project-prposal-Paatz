@@ -1,0 +1,39 @@
+Pflichtenheft Smart Fridge
+
+Version: 1.0
+Version Date: 26.01.2020
+Version Notes:
+Author: Patrick Spisak patrick.spisak@gmx.at
+
+1.Beschreibung der Ausgangssituation
+Die HTL Leonding ist eine Oberstufenschule im zentralen Raum Oberösterrech.
+
+2.Istzustand
+Informatikschüler sollen im dritten Jahrgang Projekte erarbeiten. 
+ 
+3.Problemstellung
+Menschen wissen nicht genau was sie alles zu Hause daheim in Kühlschrank haben.
+
+4.Aufgabenstellung
+Ein intelligenter Kühlschrank, dass alle Produkte aufschreibt, die in den Kühlschrank reinkommen.
+
+4.1
+@startuml
+left to right direction
+actor Fridge
+actor Product
+rectangle SmartFridge{
+    Fridge -- (Produkt aufnehmen/abgeben)
+}
+@enduml
+
+@startuml
+Fridge "1" -- "*" Product : has
+@enduml
+
+
+5. Zielsetzung
+Denkarbeit vom Menschen abnehmen.
+
+6. Mengengerüst
+Die Anzahl der Daten hängt davon ab wie viele Produkte im Kühlschrank jeweils sind.
